@@ -15,6 +15,9 @@ contract CardFusion is ZamaEthereumConfig, ERC721, ERC721Enumerable, Ownable, Re
     /// @notice Counter for card IDs
     uint256 private _cardIdCounter;
 
+    /// @notice Maximum number of cards that can be minted
+    uint256 public constant MAX_CARDS = type(uint256).max;
+
     /// @notice Internal function to check if a card exists
     /// @param cardId The ID of the card to check
     /// @return true if the card exists, false otherwise
