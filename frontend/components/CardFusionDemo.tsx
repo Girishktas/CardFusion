@@ -12,6 +12,10 @@ import { CollectionView } from "./views/CollectionView";
 import { FuseView } from "./views/FuseView";
 import { StatusView } from "./views/StatusView";
 
+/**
+ * Main CardFusion demo component
+ * Handles wallet connection and card management
+ */
 export const CardFusionDemo = () => {
   const { storage: fhevmDecryptionSignatureStorage } = useInMemoryStorage();
   const {
