@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
+// Get basePath from environment variable, default to empty string
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const nextConfig: NextConfig = {
   output: 'export',
+  basePath: basePath,
+  assetPrefix: basePath,
   images: { unoptimized: true },
   trailingSlash: true,
   reactStrictMode: true,
