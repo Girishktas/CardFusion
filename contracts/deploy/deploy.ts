@@ -12,7 +12,8 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     waitConfirmations: 1,
   });
 
-  console.log(`CardFusion contract: `, deployedCardFusion.address);
+  console.log(`CardFusion contract deployed at: `, deployedCardFusion.address);
+  console.log(`Deployment transaction hash: `, deployedCardFusion.transactionHash);
 };
 export default func;
 func.id = "deploy_cardFusion"; // id required to prevent reexecution
